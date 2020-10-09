@@ -1,5 +1,6 @@
 {
-  "version": "0.0.0",
+  "name": "node-lambda-alb",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "node": "14.8.x"
