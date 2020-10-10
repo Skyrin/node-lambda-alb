@@ -1,9 +1,15 @@
 const http = require('http')
 const url = require('url')
 
-handler = (server, randomSocketLength) => {
+handler = (server, opts) => {
+	if (opts == null) {
+		opts = {
+			randomSocketLength: 64,
+		}
+	}
+
 	return (event, context) => {
-		const srv = newServer(server, randomSocketLength)
+		const srv = newServer(server, opts.randomSocketLength)
 
 		return new Promise((resolve,reject) => {
 			srv.on('listening', () => {
