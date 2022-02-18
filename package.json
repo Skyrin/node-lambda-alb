@@ -1,10 +1,10 @@
 {
   "name": "node-lambda-alb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "private": true,
   "engines": {
-    "node": "14.8.x"
+    "node": ">=14"
   },
   "dependencies": {
   },
